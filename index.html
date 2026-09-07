@@ -335,6 +335,21 @@
       font-size: 12px;
     }
 
+    .quotation-preview .table-responsive table {
+      table-layout: fixed;
+    }
+
+    .quotation-preview .table-responsive .description-col { width: 61%; }
+    .quotation-preview .table-responsive .quantity-col { width: 9%; }
+    .quotation-preview .table-responsive .unit-price-col,
+    .quotation-preview .table-responsive .total-col { width: 15%; }
+
+    .quotation-preview .table-responsive .action-col,
+    .quotation-preview .table-responsive tbody tr td:last-child,
+    .quotation-preview .dropdown-caret {
+      display: none !important;
+    }
+
     .quotation-preview th,
     .quotation-preview td {
       padding: 7px;
@@ -1295,9 +1310,7 @@
       .item-product-select,
       .catalog-manager-panel,
       #catalogManagerPanel,
-      .no-print,
-      #itemsTable th:last-child,
-      #itemsTable td:last-child {
+      .no-print {
         display: none !important;
       }
 
@@ -1358,19 +1371,19 @@
       .form-group input, .form-group select { font-size: 12px; padding: 2px 4px; }
       .form-group[style*="grid-column"] { grid-column: span 2 !important; }
       .table-responsive { margin-bottom: 10px; }
-      #itemsTable {
+      .quotation-preview .table-responsive table {
         width: 100% !important;
         min-width: 0 !important;
         table-layout: fixed !important;
       }
-      #itemsTable .description-col { width: 58% !important; }
-      #itemsTable .quantity-col { width: 10% !important; }
-      #itemsTable .unit-price-col,
-      #itemsTable .total-col { width: 16% !important; }
-      #itemsTable .action-col { display: none !important; width: 0 !important; }
-      #itemsTable th, #itemsTable td { padding: 4px 6px; font-size: 12px; }
-      #itemsTable td input { padding: 2px; font-size: 12px; }
-      #itemsTable th {
+      .quotation-preview .table-responsive .description-col { width: 58% !important; }
+      .quotation-preview .table-responsive .quantity-col { width: 10% !important; }
+      .quotation-preview .table-responsive .unit-price-col,
+      .quotation-preview .table-responsive .total-col { width: 16% !important; }
+      .quotation-preview .table-responsive th,
+      .quotation-preview .table-responsive td { padding: 4px 6px; font-size: 12px; }
+      .quotation-preview .table-responsive td input { padding: 2px; font-size: 12px; }
+      .quotation-preview .table-responsive th {
         background: #f0f4f8 !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
